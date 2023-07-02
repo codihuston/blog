@@ -1,0 +1,3 @@
+baseURL = 'http://codi.blog/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
