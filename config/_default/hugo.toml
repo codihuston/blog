@@ -22,16 +22,22 @@ hideHUGOSupport = false
 [menu]
   [[menu.main]]
     name = "Home"
-    pre = "home"
+    pre = "house-blank"
     url = "/"
     weight = 1
   [[menu.main]]
     name = "Posts"
-    pre = "pen-tool"
+    pre = "newspaper"
     url = "/posts/"
     weight = 2
   [[menu.main]]
     name = "Tags"
-    pre = "tag"
+    pre = "tags"
     url = "/tags/"
     weight = 3
+  [[menu.main]]
+    name = "Categories"
+    pre = "layer-group"
+    url = "/categories/"
+    weight = 4
+
