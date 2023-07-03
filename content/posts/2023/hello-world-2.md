@@ -2,8 +2,8 @@
 title: "Hello World 2"
 date: 2023-07-03T10:04:10-05:00
 draft: true
-categories: ["travel"]
-tags: ["bar"]
+categories: ["Travel"]
+tags: ["Bar"]
 ---
 
 This is another blog post! Happy to be here!
