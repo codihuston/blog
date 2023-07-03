@@ -1,9 +1,10 @@
 ---
 title: "Hello World"
 date: 2023-07-02T10:45:46-05:00
+thumbnail: "nagoya-castle.jpg"
 draft: true
-categories: ["Development"]
-tags: ["Foo"]
+categories: ["development"]
+tags: ["foo"]
 ---
 
 This is a PSA! This is not a test!

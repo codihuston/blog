@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+<ul>
+  <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
+  <ul>
+  {{ range .Pages }}
+  <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+  {{ end }}
+  </ul>
+</ul>
+{{ end }}
+{{ end }}

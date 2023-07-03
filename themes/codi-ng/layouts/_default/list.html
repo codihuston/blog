@@ -3,7 +3,9 @@
 {{ range .Pages.ByPublishDate.Reverse }}
 <div class="row mb-2">
     <div class="col-md-3">
-      <img src="/images/nagoya-castle.jpg" class="img-fluid" alt="Responsive image">
+      {{ if .Params.Thumbnail }}
+      <img src="/images/{{ .Params.Thumbnail }}" class="img-fluid" alt="Responsive image">
+      {{ end }}
     </div>
     <div class="col-md-9">
       <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
