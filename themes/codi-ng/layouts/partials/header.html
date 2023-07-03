@@ -1,41 +1,37 @@
 <div id="nav-border" class="container">
-    <nav id="nav" class="nav justify-content-center">
-        {{ range .Site.Menus.main }}
-        <a class="nav-link" href="{{ .URL }}">
-        {{ if .Pre }}
-        {{ $icon := partial "fontawesome.html" .Pre | safeHTML }}
-        {{ $icon }}
-        {{ end }}
-        {{ $text := print .Name | safeHTML }}
-        {{ $text }}
-        </a>
-        {{ end }}
-    </nav>
-    <div class="socials">
-      <div>
-        <a href="https://github.com/codihuston">
-          {{ partial "fontawesome.html" "github" }}
-        </a>
-      </div>
-      <div>
-        <a href="https://www.instagram.com/codihuston">
-          {{ partial "fontawesome.html" "instagram" }}
-        </a>
-      </div>
-      <div>
-        <a href="https://www.linkedin.com/in/codi-huston">
-          {{ partial "fontawesome.html" "linkedin" }}
-        </a>
-      </div>
-      <div>
-        <a href="https://twitter.com/codingwithcodi">
-          {{ partial "fontawesome.html" "twitter" }}
-        </a>
-      </div>
-      <div>
-        <a href="https://www.youtube.com/@codingwithcodi">
-          {{ partial "fontawesome.html" "youtube" }}
-        </a>
-      </div>
+  <nav id="nav" class="nav justify-content-center">
+    {{ range .Site.Menus.main }}
+    <a class="nav-link" href="{{ .URL }}">
+      {{ if .Pre }} {{ $icon := partial "fontawesome.html" .Pre | safeHTML }} {{
+      $icon }} {{ end }} {{ $text := print .Name | safeHTML }} {{ $text }}
+    </a>
+    {{ end }}
+  </nav>
+  <div class="socials">
+    <div>
+      <a href="https://github.com/codihuston" class="no-style">
+        {{ partial "fontawesome.html" "github" }} GitHub
+      </a>
     </div>
+    <div>
+      <a href="https://www.instagram.com/codihuston" class="no-style">
+        {{ partial "fontawesome.html" "instagram" }} Instagram
+      </a>
+    </div>
+    <div>
+      <a href="https://www.linkedin.com/in/codi-huston" class="no-style">
+        {{ partial "fontawesome.html" "linkedin" }} LinkedIn
+      </a>
+    </div>
+    <div>
+      <a href="https://twitter.com/codingwithcodi" class="no-style">
+        {{ partial "fontawesome.html" "twitter" }} Twitter
+      </a>
+    </div>
+    <div>
+      <a href="https://www.youtube.com/@codingwithcodi" class="no-style">
+          {{ partial "fontawesome.html" "youtube" }} YouTube
+      </a>
+    </div>
+  </div>
 </div>

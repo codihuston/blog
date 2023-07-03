@@ -2,6 +2,18 @@ body {
   padding: 0
 }
 
+a.no-style:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+a.no-style:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .inline-svg {
   display: inline-block;
   height: 1.15rem;
@@ -10,9 +22,14 @@ body {
   position: relative;
 }
 
+.inline-svg  > svg {
+  vertical-align: baseline !important;
+}
+
 .socials {
   display: flex; /* or inline-flex */
   flex-direction: row;
   justify-content: space-evenly;
   cursor: pointer;
+  align-items: baseline;
 }
