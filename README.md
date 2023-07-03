@@ -13,6 +13,12 @@ hugo server -D
 
 Navigate to: http://localhost:1313/
 
+# Creating a Post
+
+```
+hugo new posts/my-first-post.md
+```
+
 # Publishing
 
 ```
