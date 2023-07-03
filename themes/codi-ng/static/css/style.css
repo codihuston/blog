@@ -9,3 +9,10 @@ body {
   top: 0.15rem;
   position: relative;
 }
+
+.socials {
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}

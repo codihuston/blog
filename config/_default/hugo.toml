@@ -1,9 +1,9 @@
-baseurl = "https://codi.blog"
+baseurl = "https://www.codihuston.com/"
 languageCode = "en-us"
 title = "Codi's Blog"
 theme = "codi-ng"
 paginate = 2
-Copyright = "© Codi Huston 2023"
+Copyright = "© Codi Huston"
 canonifyurls = true
 
 [params]
