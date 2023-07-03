@@ -1,14 +1,26 @@
 ---
-title: "2023 07 02 Hello World"
+title: "Hello World"
 date: 2023-07-02T10:45:46-05:00
 draft: true
 tags: ["foo"]
 ---
-# Hello World!
+# Welcome to My Blog!
+
+## About
 
 This is a PSA! This is not a test!
 
 <!--more-->
+
+## Japan
+
+![Scenario 1: Across columns](/images/nagoya-castle.jpg)
+
+## Code
+
+It's time to code!
+
+###  Example Command
 
 Run the following command:
 
