@@ -1,12 +1,18 @@
 {{ define "main" }}
-{{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-<ul>
-  <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
-  <ul>
-  {{ range .Pages }}
-  <li hugo-nav="{{ .RelPermalink}}"><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+<h1>Categories</h1>
+{{ if isset .Data "Term" }}
+  The following post(s) are related to "{{ .Data.Term }}"
+  <ol>
+  {{ range ($.Site.GetPage "taxonomyTerm" .Data.Term).Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
+  {{ end }}  
+  </ol>
+{{ else }}
+  Filter posts by the following categories:
+  <ol>
+  {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
   {{ end }}
-  </ul>
-</ul>
+  </ol>
 {{ end }}
 {{ end }}
