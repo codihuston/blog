@@ -20,7 +20,7 @@ assetDir = "static"
 
 [params]
   author = "Codi Huston"
-  aboutme = "I am a software engineer with a passion for writing and sharing my knowledge with others. My focus is Web Development, DevOps, and cloud computing."
+  aboutme = "I am a passionate software engineer with a passion for writing and sharing my knowledge with others! My focus is Web Development, DevOps, and cloud computing."
   description = "Welcome to my blog, where I discuss all things code, devlops, and tech."
   authorlocation = "Kentucky, USA"
   cover = "images/cover.png"

@@ -6,15 +6,14 @@ layout: "about"
 ---
 # About
 
-I am a passionate software engineer with a focus on
-containerization, Kubernetes, and DevOps. I embarked on my professional
-journey in 2015 after graduating with a Bachelor's of Science in Computer
-Science!
+{{< about >}}
 
-For six fulfilling years, I honed my skills as a web developer and systems
-administrator for a public university. This experience not only deepened
-my understanding of technology but also instilled in me a strong
-appreciation for efficient systems and secure infrastructure.
+I embarked on my professional journey in 2015 after graduating with a Bachelor's
+of Science in Computer Science! For six fulfilling years, I honed my skills as
+a web developer and systems administrator for a public university. This
+experience not only deepened my understanding of technology but also instilled
+in me a strong appreciation for efficient systems and secure infrastructure.
+
 During my tenure, my fascination with containerization and its potential
 for revolutionizing software deployment grew. As I delved further into
 the world of DevOps, I began exploring the challenges of securing secrets
