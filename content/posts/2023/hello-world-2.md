@@ -50,10 +50,15 @@ It's time to code!
 
 Run the following command:
 
-```bash
-VARIABLE="Hello World!"
+```go
+package main
 
-echo "$VARIABLE"
+import "fmt"
+
+func main() {
+	// hi
+	fmt.Println("Hello, World!")
+}
 ```
 
 Change it!

@@ -9,6 +9,12 @@ article {
   font-size: 1.2em;
 }
 
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  font-family: PT Sans;
+  font-weight: 700;
+  color: #222;
+}
+
 nav > ul * { list-style: none;}
 
 nav > ul > li * { 
@@ -58,6 +64,15 @@ a.no-style:visited {
   justify-content: space-evenly;
   cursor: pointer;
   align-items: baseline;
+}
+
+.highlight > div {
+  display: inline-block;
+  padding: 1em 1em 1em 1em;
+  box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
+  border-radius: 7px;
+  border: 2px solid black;
+  width: 100%;
 }
 
 /*

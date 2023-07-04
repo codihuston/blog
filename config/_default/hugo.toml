@@ -12,6 +12,11 @@ assetDir = "static"
     endLevel = 5
     ordered = false
     startLevel = 2
+  [markup.highlight]
+    tabWidth = 2
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
 
 [params]
 description = "Welcome to my blog, where I discuss all things code, devlops, and tech."
