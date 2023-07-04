@@ -1,11 +1,32 @@
 {{ $dateTime := .PublishDate.Format "2006-01-02" }}
 {{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
-{{ partial "fontawesome.html" "newspaper" }}
-<time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
-{{ with .Params.tags }}
-{{ partial "fontawesome.html" "tags" }}
-{{ range . }}
-{{ $href := print (absURL "tags/") (urlize .) }}
-<a class="btn btn-sm btn-outline-dark tag-btn" href="{{ $href }}">{{ . }}</a>
-{{ end }}
-{{ end }}
+{{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
+{{ $minutes := math.Floor (div $readTime 60) }}
+<div class="article-metadata">
+  <span>
+    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+  </span>
+  <span class="dot"></span>
+  <span class="text-muted">
+    {{ $minutes }} min read
+  </span>
+  <span class="dot"></span>
+  <span class="text-muted">
+    {{ .FuzzyWordCount }} words
+  </span>
+</div>
+<div class="article-tags">
+  {{ with .Params.tags }}
+  <span class="text-muted">
+    Tags:
+  </span>
+  {{ range . }}
+  {{ $href := print (absURL "tags/") (urlize .) }}
+  <a href="{{ $href }}" class="no-style">
+    <span class="badge bg-secondary">
+      {{ . }}
+    </span>
+  </a>
+  {{ end }}
+  {{ end }}  
+</div>

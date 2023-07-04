@@ -3,12 +3,19 @@
     <aside>
         {{ .TableOfContents }}
     </aside>
-    <article>
-    <header>
-        <h1>{{ .Title }}</h1>
-        {{ partial "metadata.html" . }}
-    </header>
-        {{ .Content }}
+    <article class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div>
+          <header>
+              <h1>{{ .Title }}</h1>
+              {{ partial "metadata.html" . }}
+          </header>
+          <div class="flex-first flex-md-unordered">
+            {{ .Content }}
+          </div>
+        </div>
+      </div>
     </article>
 </main>
 {{ end }}
