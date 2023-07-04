@@ -19,17 +19,19 @@ assetDir = "static"
     lineNumbersInTable = true
 
 [params]
-description = "Welcome to my blog, where I discuss all things code, devlops, and tech."
-authorlocation = "Kentucky, USA"
-cover = "images/cover.png"
-## save the image you want to use as background picture in directory "./static/images"author = "author name"(delete this line when editing)
-logo = "images/logo.png"
-## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
-githubName = "codihuston"
-linkedinName = "codi-huston"
-email = "codi.huston@gmail.com"
-instagramName = "codihuston"
-hideHUGOSupport = false
+  author = "Codi Huston"
+  aboutme = "I am a software engineer with a passion for writing and sharing my knowledge with others. My focus is Web Development, DevOps, and cloud computing."
+  description = "Welcome to my blog, where I discuss all things code, devlops, and tech."
+  authorlocation = "Kentucky, USA"
+  cover = "images/cover.png"
+  ## save the image you want to use as background picture in directory "./static/images"author = "author name"(delete this line when editing)
+  logo = "images/logo.png"
+  ## save the image you want to use as website logo in directory "./static/images"(delete this line when editing)
+  githubName = "codihuston"
+  linkedinName = "codi-huston"
+  email = "codi.huston@gmail.com"
+  instagramName = "codihuston"
+  hideHUGOSupport = false
 
 [menu]
   [[menu.main]]

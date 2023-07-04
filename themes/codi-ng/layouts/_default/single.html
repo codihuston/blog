@@ -5,6 +5,7 @@
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
         <header class="">
+            {{ partial "author.html" . }}
             <h1>{{ .Title }}</h1>
             {{ partial "metadata.html" . }}
         </header>
