@@ -7,6 +7,12 @@ Copyright = "© Codi Huston"
 canonifyurls = true
 assetDir = "static"
 
+[markup]
+  [markup.tableOfContents]
+    endLevel = 5
+    ordered = false
+    startLevel = 2
+
 [params]
 description = "Welcome to my blog, where I discuss all things code, devlops, and tech."
 authorlocation = "Kentucky, USA"

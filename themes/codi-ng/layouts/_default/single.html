@@ -1,21 +1,23 @@
 {{ define "main" }}
 <main>
-    <aside>
-        {{ .TableOfContents }}
-    </aside>
-    <article class="container">
-      <div class="row">
-        <div class="col-md-2"></div>
-        <div>
-          <header>
-              <h1>{{ .Title }}</h1>
-              {{ partial "metadata.html" . }}
-          </header>
-          <div class="flex-first flex-md-unordered">
-            {{ .Content }}
-          </div>
+  <article class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-8">
+        <header class="">
+            <h1>{{ .Title }}</h1>
+            {{ partial "metadata.html" . }}
+        </header>
+        <h2> Table of Contents</h2>
+        <aside class="toc">
+            {{ .TableOfContents }}
+        </aside>
+        <div class="flex-first flex-md-unordered">
+          {{ .Content }}
         </div>
+        <div class="col-lg-2"></div>
       </div>
-    </article>
+    </div>
+  </article>
 </main>
 {{ end }}

@@ -9,6 +9,19 @@ article {
   font-size: 1.2em;
 }
 
+nav > ul * { list-style: none;}
+
+nav > ul > li * { 
+  text-decoration: inherit;
+  color: inherit;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li * a:hover {
+  color: blue;
+  cursor: pointer;
+}
+
 .dot:after {
   content: "\00B7";
   margin-left: 3px;
@@ -46,3 +59,20 @@ a.no-style:visited {
   cursor: pointer;
   align-items: baseline;
 }
+
+/*
+  Auto Numbering
+  Source: https://codingnconcepts.com/hugo/auto-number-headings-hugo/
+ */
+ body {counter-reset: h2}
+ h2 {counter-reset: h3}
+ h3 {counter-reset: h4}
+ h4 {counter-reset: h5}
+ 
+ article[autonumbering] h2:before {counter-increment: h2; content: counter(h2) ". "}
+ article[autonumbering] h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+ article[autonumbering] h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+ 
+ article[autonumbering] .toc__menu ul { counter-reset: item }
+ article[autonumbering] .toc__menu li a:before { content: counters(item, ".") ". "; counter-increment: item }
+ 
