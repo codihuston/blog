@@ -2,6 +2,12 @@ body {
   padding: 0
 }
 
+.author {
+  border: 1px solid gray;
+  border-style: dotted;
+  padding: 1rem;
+}
+
 article {
   font-family: Merriweather;
   line-height: 1.8;
