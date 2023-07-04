@@ -1,0 +1,17 @@
+<p>
+  {{ $image := resources.Get (.Scratch.Get "Src") }}
+  {{ $targetWidth := (.Scratch.Get "Width") }}
+  {{ $targetHeight := (.Scratch.Get "Height") }}
+  {{ $dimensions := printf "%sx%s" $targetWidth $targetHeight }}
+  {{ $resize := $image.Resize (printf "%s %s" $dimensions) }}
+  {{ $imageBaseName := strings.TrimSuffix (path.Ext $image.Name) $image.Name }}
+  {{ $imageExt :=  (path.Ext $image.Name) }}
+  {{ $newImageName := (printf "%s-%s%s" $imageBaseName $dimensions $imageExt) }}
+  {{ $newImage := resources.Copy $newImageName $resize }}
+  <img src="{{ $newImage.RelPermalink }}"
+    width="{{ $newImage.Width }}"
+    height="{{ $newImage.Height }}"
+    title="{{ .Scratch.Get "Title" }}"
+    class="{{ .Scratch.Get "Class" }}"
+    alt="{{ .Scratch.Get "Alt" }}">
+</p>

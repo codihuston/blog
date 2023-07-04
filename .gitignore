@@ -4,3 +4,4 @@ dist
 tmp
 .hugo_build.lock
 public
+resources

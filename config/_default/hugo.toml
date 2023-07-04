@@ -5,6 +5,7 @@ theme = "codi-ng"
 paginate = 2
 Copyright = "© Codi Huston"
 canonifyurls = true
+assetDir = "static"
 
 [params]
 description = "Welcome to my blog, where I discuss all things code, devlops, and tech."

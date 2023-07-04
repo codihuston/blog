@@ -17,7 +17,12 @@ Welcome back!
 
 ## Japan
 
-![Scenario 1: Across columns](/images/nagoya-castle.jpg)
+{{< img
+  width="600"
+  height=""
+  class="img-fluid"
+  src="/images/nagoya-castle.jpg"
+  title="Title Text" alt="Alt Text">}}
 
 ## Code
 

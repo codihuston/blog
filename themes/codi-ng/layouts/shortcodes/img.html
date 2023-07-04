@@ -1,0 +1,8 @@
+
+{{ .Scratch.Set "Height" (string (.Get `height`)) }}
+{{ .Scratch.Set "Width" (string  (.Get `width`)) }}
+{{ .Scratch.Set "Class" (.Get `class`) }}
+{{ .Scratch.Set "Src" (.Get `src`) }}
+{{ .Scratch.Set "Title" (.Get `title`) }}
+{{ .Scratch.Set "Alt" (.Get `alt`) }}
+{{ partial "img.html" . }}

@@ -4,7 +4,13 @@
 <div class="row mb-2">
     <div class="col-md-3">
       {{ if .Params.Thumbnail }}
-      <img src="/images/{{ .Params.Thumbnail }}" class="img-fluid" alt="Responsive image">
+      {{ .Scratch.Set "Height" "150" }}
+      {{ .Scratch.Set "Width" "" }}
+      {{ .Scratch.Set "Class" "img-fluid" }}
+      {{ .Scratch.Set "Src" (printf "%s%s" "/images/" .Params.Thumbnail) }}
+      {{ .Scratch.Set "Title" "Some title" }}
+      {{ .Scratch.Set "Alt" "Some Alt Text" }}
+      {{ partial "img.html" . }}
       {{ end }}
     </div>
     <div class="col-md-9">
