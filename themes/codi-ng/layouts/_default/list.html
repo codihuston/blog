@@ -16,9 +16,7 @@
     <div class="col-md-9">
       <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
       {{ partial "metadata.html" . }}
-      <a class="summary" href="{{ .RelPermalink }}">
-          <p>{{ .Summary }}</p>
-      </a>
+      <em><p>{{ .Summary }}</p><em></em>
     </div>
 </div>
 {{ end }}

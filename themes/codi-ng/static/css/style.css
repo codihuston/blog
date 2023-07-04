@@ -9,6 +9,12 @@ article {
   font-size: 1.2em;
 }
 
+/* Aligns the tag icon with the tag badges */
+.list-tag {
+  top: 0.15em;
+  position: relative;
+}
+
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   font-family: PT Sans;
   font-weight: 700;

@@ -3,8 +3,11 @@
 {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
 {{ $minutes := math.Floor (div $readTime 60) }}
 <div class="article-metadata">
-  <span>
-    <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
+  <span>  
+    <span class="text-muted">
+      {{ partial "fontawesome.html" "calendar-day" }}
+    </span>
+  <time datetime="{{ $dateTime }}">{{ .PublishDate.Format $dateFormat }}</time>
   </span>
   <span class="dot"></span>
   <span class="text-muted">
@@ -17,8 +20,8 @@
 </div>
 <div class="article-tags">
   {{ with .Params.tags }}
-  <span class="text-muted">
-    Tags:
+  <span class="list-tag text-muted">
+  {{ partial "fontawesome.html" "tags" }}
   </span>
   {{ range . }}
   {{ $href := print (absURL "tags/") (urlize .) }}
