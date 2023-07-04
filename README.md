@@ -13,6 +13,13 @@ hugo server -D
 
 Navigate to: http://localhost:1313/
 
+# Sharing
+
+```
+ngrok http 1313
+hugo server --buildDrafts -b <ngrok url> --appendPort=false --liveReloadPort=443 --navigateToChanged
+```
+
 # Creating a Post
 
 ```
