@@ -4,7 +4,7 @@
 <div class="row mb-2">
     <div class="col-md-3">
       {{ if .Params.Thumbnail }}
-      {{ .Scratch.Set "Height" "150" }}
+      {{ .Scratch.Set "Height" "400" }}
       {{ .Scratch.Set "Width" "" }}
       {{ .Scratch.Set "Class" "img-fluid" }}
       {{ .Scratch.Set "Src" (printf "%s%s" "/images/" .Params.Thumbnail) }}
