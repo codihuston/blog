@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-lg-2">
+  </div>
+  <div class="col-lg-8">
+    <h2 class="text-center">Recent Posts</h2>
+    {{ range first 3 (where .Site.RegularPages "Type" "posts") }}
+    {{ partial "post-list-item.html" . }}
+    {{ end }}
+  </div>
+</div>
