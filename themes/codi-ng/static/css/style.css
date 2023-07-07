@@ -80,6 +80,7 @@ a.no-style:visited {
   justify-content: space-evenly;
   cursor: pointer;
   align-items: baseline;
+  border-bottom: 1px solid gray;
 }
 
 .highlight > div {

@@ -4,13 +4,13 @@
     <div class="row">
       <div class="col-lg-2"></div>
       <div class="col-lg-8">
-        <header class="">
+        <header class="end-of-section">
             {{ partial "author.html" . }}
             <h1>{{ .Title }}</h1>
             {{ partial "metadata.html" . }}
         </header>
         <h2> Table of Contents</h2>
-        <aside class="toc">
+        <aside class="toc end-of-section">
             {{ .TableOfContents }}
         </aside>
         <div class="flex-first flex-md-unordered">
