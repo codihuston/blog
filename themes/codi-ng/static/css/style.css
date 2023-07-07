@@ -27,6 +27,14 @@ body {
   }
 }
 
+/* Align blog column in center of page in large display */
+@media (min-width: 1200px) {
+  .container {
+      width: 1140px;
+      max-width: 100%;
+  }
+}
+
 .end-of-section {
   margin-bottom: 1rem;
 }
