@@ -14,7 +14,9 @@ autonumbering: true
   height=""
   class="img-fluid"
   src="/images/nagoya-castle.jpg"
-  title="Title Text" alt="Alt Text">}}
+  title="Nagoya Castle" alt="Figure — A photo of Nagoya Castle amongst a bed of flowers."
+  figCaption="Figure — A photo of Nagoya Castle amongst a bed of flowers."
+>}}
 
 Welcome Back!
 

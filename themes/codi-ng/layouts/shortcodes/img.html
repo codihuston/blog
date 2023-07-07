@@ -5,4 +5,5 @@
 {{ .Scratch.Set "Src" (.Get `src`) }}
 {{ .Scratch.Set "Title" (.Get `title`) }}
 {{ .Scratch.Set "Alt" (.Get `alt`) }}
+{{ .Scratch.Set "FigCaption" (.Get `figCaption`) }}
 {{ partial "img.html" . }}

@@ -8,10 +8,17 @@
   {{ $imageExt :=  (path.Ext $image.Name) }}
   {{ $newImageName := (printf "%s-%s%s" $imageBaseName $dimensions $imageExt) }}
   {{ $newImage := resources.Copy $newImageName $resize }}
-  <img src="{{ $newImage.RelPermalink }}"
-    width="{{ $newImage.Width }}"
-    height="{{ $newImage.Height }}"
-    title="{{ .Scratch.Get "Title" }}"
-    class="{{ .Scratch.Get "Class" }}"
-    alt="{{ .Scratch.Get "Alt" }}">
+  <figure>
+    <img src="{{ $newImage.RelPermalink }}"
+      width="{{ $newImage.Width }}"
+      height="{{ $newImage.Height }}"
+      title="{{ .Scratch.Get "Title" }}"
+      class="{{ .Scratch.Get "Class" }}"
+      alt="{{ .Scratch.Get "Alt" }}">
+    <figcaption class="text-center text-muted">
+      <em>
+        {{ .Scratch.Get "FigCaption" }}
+      </em>
+    </figcaption>
+  </figure>
 </p>
