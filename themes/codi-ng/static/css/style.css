@@ -26,10 +26,6 @@ body {
     margin-top: 7rem;
   }
 }
-/* 
-.content {
-  margin-top: 5rem;
-} */
 
 .end-of-section {
   margin-bottom: 1rem;
@@ -59,21 +55,6 @@ article {
   font-weight: 700;
   color: #222;
 }
-
-/* Table of Contents */
-/* 
-nav > ul * { list-style: none;}
-
-nav > ul > li * { 
-  text-decoration: inherit;
-  color: inherit;
-}
-
-nav > ul > li > a:hover,
-nav > ul > li * a:hover {
-  color: blue;
-  cursor: pointer;
-} */
 
 .dot:after {
   content: "\00B7";
