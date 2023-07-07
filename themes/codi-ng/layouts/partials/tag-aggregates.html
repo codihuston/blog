@@ -1,0 +1,15 @@
+{{/* Count instances of each tag for all posts */}}
+{{ $map := newScratch }}
+{{ range site.RegularPages }}
+  {{ range .Params.Tags }}
+      {{ $map.Set . (add ($map.Get . | default 0) 1) }}
+    {{ end }}
+{{ end }}
+{{/* Display every tag and their number of appearances */}}
+{{ range ($.Site.GetPage "taxonomyTerm" "tags").Pages | sort }}
+  <a href="{{ .Permalink }}" class="no-style">
+    <span class="badge bg-secondary">
+      {{ .Title }}: {{ $map.Get .Title }}
+    </span>
+  </a>
+{{ end }}

@@ -1,6 +1,14 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-{{ partial "post-list-item.html" . }}
-{{ end }}
+<div class="end-of-section">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h1>{{ .Title }}</h1>
+      {{ range .Pages.ByPublishDate.Reverse }}
+      {{ partial "post-list-item.html" . }}
+      {{ end }}
+    </div>
+  </div> 
+</div>
 {{ end }}

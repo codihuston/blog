@@ -4,7 +4,7 @@ date: 2023-07-03T10:04:10-05:00
 thumbnail: "nagoya-castle.jpg"
 draft: true
 categories: ["Travel"]
-tags: ["alpha"]
+tags: ["beta", "alpha"]
 summary: "This is a summary"
 autonumbering: true
 ---
