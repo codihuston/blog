@@ -46,9 +46,9 @@ assetDir = "static"
     url = "/about/"
     weight = 2
   [[menu.main]]
-    name = "Posts"
+    name = "Blog"
     pre = "newspaper"
-    url = "/posts/"
+    url = "/blog/"
     weight = 3
   [[menu.main]]
     name = "Tags"

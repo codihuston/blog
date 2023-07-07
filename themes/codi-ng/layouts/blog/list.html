@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="end-of-section">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h1>Blog</h1>
+      {{ range ($.Site.GetPage "taxonomyTerm" "blog").Pages.ByPublishDate.Reverse }}
+      {{ partial "post-list-item.html" . }}
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
