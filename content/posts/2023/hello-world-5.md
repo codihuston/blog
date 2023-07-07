@@ -5,7 +5,7 @@ thumbnail: "nagoya-castle.jpg"
 draft: true
 categories: ["Music"]
 tags: ["epsilon", "delta", "gamma", "beta", "alpha"]
-summary: "This is a summary"
+summary: "This is a summary. Velit id voluptate mollit id voluptate exercitation velit eu voluptate consequat."
 autonumbering: true
 ---
 

@@ -1,18 +1,22 @@
 <div class="row mb-2">
-  <div class="col-md-3">
-    {{ if .Params.Thumbnail }}
-    {{ .Scratch.Set "Height" "400" }}
-    {{ .Scratch.Set "Width" "" }}
-    {{ .Scratch.Set "Class" "img-fluid" }}
-    {{ .Scratch.Set "Src" (printf "%s%s" "/images/" .Params.Thumbnail) }}
-    {{ .Scratch.Set "Title" "Some title" }}
-    {{ .Scratch.Set "Alt" "Some Alt Text" }}
-    {{ partial "img.html" . }}
-    {{ end }}
+  <div class="col-md-5">
+    <a class="title" href="{{ .RelPermalink }}">
+      {{ if .Params.Thumbnail }}
+      {{ .Scratch.Set "Height" "400" }}
+      {{ .Scratch.Set "Width" "" }}
+      {{ .Scratch.Set "Class" "img-fluid" }}
+      {{ .Scratch.Set "Src" (printf "%s%s" "/images/" .Params.Thumbnail) }}
+      {{ .Scratch.Set "Title" "Some title" }}
+      {{ .Scratch.Set "Alt" "Some Alt Text" }}
+      {{ partial "img.html" . }}
+      {{ end }}
+    </a>
   </div>
-  <div class="col-md-9">
+  <div class="col-md-7">
     <h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <p>
+      <em>{{ .Summary }}</em>
+    </p>
     {{ partial "metadata.html" . }}
-    <em><p>{{ .Summary }}</p></em>
   </div>
 </div>
