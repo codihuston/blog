@@ -2,6 +2,35 @@ body {
   padding: 0
 }
 
+/* Push content out from under the sticky header */
+@media (min-width: 0px) {
+  .content {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .content {
+    margin-top: 8rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .content {
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .content {
+    margin-top: 7rem;
+  }
+}
+/* 
+.content {
+  margin-top: 5rem;
+} */
+
 .end-of-section {
   margin-bottom: 1rem;
 }
@@ -74,13 +103,34 @@ a.no-style:visited {
   vertical-align: baseline !important;
 }
 
+.nav-container {
+  padding: 0px;
+  background-color: white;
+  color: #555;
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.nav {
+  height: 65px;
+  box-shadow: 0 0 8px 8px rgba(0,0,0,7%);
+  align-items: center;
+  justify-content: center;
+}
+
 .socials {
+  line-height: 1.8;
+  font-size: 1rem;
   display: flex; /* or inline-flex */
   flex-direction: row;
   justify-content: space-evenly;
   cursor: pointer;
   align-items: baseline;
   border-bottom: 1px solid gray;
+  color: white;
+  background: rgb(63,61,194);
+  background: linear-gradient(90deg, rgba(63,61,194,1) 0%, rgba(102,100,206,1) 50%);
 }
 
 .highlight > div {

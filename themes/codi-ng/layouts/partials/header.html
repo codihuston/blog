@@ -1,10 +1,13 @@
-<div id="nav-border" class="container end-of-section">
+<div class="fixed-top nav-container end-of-section">
   {{ partial "socials.html" }}
   <nav id="nav" class="nav justify-content-center">
     {{ range .Site.Menus.main }}
-    <a class="nav-link" href="{{ .URL }}">
-      {{ if .Pre }} {{ $icon := partial "fontawesome.html" .Pre | safeHTML }} {{
-      $icon }} {{ end }} {{ $text := print .Name | safeHTML }} {{ $text }}
+    <a class="nav-link no-style" href="{{ .URL }}">
+      {{/*  {{ if .Pre }}
+        {{ $icon := partial "fontawesome.html" .Pre | safeHTML }}
+        {{ $icon }}
+      {{ end }}  */}}
+      {{ $text := print .Name | safeHTML }} {{ $text }}
     </a>
     {{ end }}
   </nav>
