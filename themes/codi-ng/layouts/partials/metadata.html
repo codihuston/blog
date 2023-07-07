@@ -19,17 +19,34 @@
   </span>
 </div>
 <div class="article-tags">
-  {{ with .Params.tags }}
-  <span class="list-tag text-muted">
-  {{ partial "fontawesome.html" "tags" }}
-  </span>
-  {{ range . }}
-  {{ $href := print (absURL "tags/") (urlize .) }}
-  <a href="{{ $href }}" class="no-style">
-    <span class="badge bg-secondary">
-      {{ . }}
-    </span>
-  </a>
-  {{ end }}
-  {{ end }}  
+  <div>
+    {{ with .Params.categories }}
+      <span class="list-tag text-muted">
+      {{ partial "fontawesome.html" "layer-group" }} Categories:
+      </span>
+      {{ range . }}
+      {{ $href := print (absURL "categories/") (urlize .) }}
+      <a href="{{ $href }}" class="no-style">
+        <span class="badge bg-success">
+          {{ . }}
+        </span>
+      </a>
+      {{ end }}
+    {{ end }}
+  </div>
+  <div>
+    {{ with .Params.tags }}
+      <span class="list-tag text-muted">
+      {{ partial "fontawesome.html" "tags" }} Tags:
+      </span>
+      {{ range . }}
+      {{ $href := print (absURL "tags/") (urlize .) }}
+      <a href="{{ $href }}" class="no-style">
+        <span class="badge bg-secondary">
+          {{ . }}
+        </span>
+      </a>
+      {{ end }}
+    {{ end }}
+  </div>
 </div>

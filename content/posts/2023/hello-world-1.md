@@ -1,10 +1,10 @@
 ---
-title: "Hello World"
+title: "Hello World 1"
 date: 2023-07-03T10:04:10-05:00
 thumbnail: "nagoya-castle.jpg"
 draft: true
 categories: ["Travel"]
-tags: ["gamma", "beta", "alpha"]
+tags: ["alpha"]
 summary: "This is a summary"
 autonumbering: true
 ---

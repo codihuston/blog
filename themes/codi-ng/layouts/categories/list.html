@@ -1,18 +1,26 @@
 {{ define "main" }}
-<h1>Categories</h1>
-{{ if isset .Data "Term" }}
-  The following post(s) are related to "{{ .Data.Term }}"
-  <ol>
-  {{ range ($.Site.GetPage "taxonomyTerm" .Data.Term).Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
-  {{ end }}  
-  </ol>
-{{ else }}
-  Filter posts by the following categories:
-  <ol>
-  {{ range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title | title}}</a></li>
-  {{ end }}
-  </ol>
-{{ end }}
+<div class="end-of-section">
+  <div class="row">
+    <div class="col-lg-2">
+    </div>
+    <div class="col-lg-8">
+      <h1>Categories</h1>
+      {{ if isset .Data "Term" }}
+        <p>Filter posts by the following categories:</p>
+        <div class="end-of-section">
+          {{ partial "category-aggregates.html" . }}
+        </div>
+        <p>The following post(s) are related to "{{ .Data.Term }}".</p>
+        {{ range ($.Site.GetPage "taxonomyTerm" (urlize .Data.Term)).Pages }}
+        {{ partial "post-list-item.html" . }}
+        {{ end }}
+      {{ else }}
+        <p>Filter posts by the following categories:</p>
+        <div class="end-of-section">
+          {{ partial "category-aggregates.html" . }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
 {{ end }}

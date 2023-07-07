@@ -16,7 +16,14 @@
           </p>
           {{ .Content }}
           <div class="text-center">
-            {{ partial "tag-aggregates.html" . }}
+            <div class="end-of-section">
+              <h3>Categories</h3>
+              {{ partial "category-aggregates.html" . }}
+            </div>
+            <div class="end-of-section">
+              <h3>Tags</h3>
+              {{ partial "tag-aggregates.html" . }}
+            </div>
           </div>
         </div>
       </div>

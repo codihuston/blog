@@ -1,10 +1,10 @@
 ---
-title: "Hello World"
+title: "Hello World 3"
 date: 2023-07-03T10:04:10-05:00
 thumbnail: "nagoya-castle.jpg"
 draft: true
-categories: ["Travel"]
-tags: ["alpha"]
+categories: ["System Administration"]
+tags: ["gamma", "beta", "alpha"]
 summary: "This is a summary"
 autonumbering: true
 ---
@@ -29,12 +29,6 @@ Exercitation duis laboris nostrud laboris veniam `consectetur` ipsum esse enim r
 ## Context
 
 Excepteur incididunt sit commodo est aliquip id non velit voluptate ipsum Lorem in. Nostrud aute officia ipsum occaecat laborum. Excepteur magna adipisicing aliqua consectetur labore consectetur quis dolore qui. Commodo ex minim proident minim fugiat sunt. Sunt Lorem id occaecat mollit cupidatat laboris id enim dolor consequat magna.
-
-Do aliquip ullamco voluptate labore veniam sit incididunt. Occaecat tempor consectetur do laborum incididunt culpa qui sit officia ipsum veniam nisi enim. Ut quis ullamco aliquip qui Lorem aute dolor sunt duis laboris.
-
-Do ullamco irure nostrud velit exercitation est excepteur sit do mollit excepteur cupidatat eu. Adipisicing cillum adipisicing cupidatat in amet consectetur magna aute. In non laboris nostrud mollit elit. Nostrud minim eu irure tempor do cillum exercitation irure ut nostrud pariatur nisi minim id. Sit enim excepteur deserunt ipsum eu enim enim do cupidatat dolore ipsum ullamco eu. Nisi dolore fugiat adipisicing sit et labore dolor laboris excepteur eu.
-
-Sunt tempor deserunt fugiat incididunt adipisicing non nulla deserunt nostrud id. Cillum velit mollit velit et magna duis est minim tempor officia ipsum. Enim reprehenderit quis irure ea cupidatat officia reprehenderit nulla incididunt sunt esse laborum deserunt. Qui anim ad quis ut in nostrud proident anim consectetur amet ea. Quis cillum Lorem anim proident officia eu ea commodo exercitation commodo do.
 
 Officia et proident ex incididunt. Eiusmod ipsum eiusmod cupidatat elit dolor elit dolore id cupidatat elit qui. Labore qui sunt excepteur proident. Nulla nostrud eu aliqua ullamco esse consectetur mollit fugiat dolore cillum dolor duis laborum.
 
