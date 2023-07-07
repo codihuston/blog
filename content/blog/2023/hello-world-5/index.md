@@ -1,7 +1,7 @@
 ---
 title: "Hello World 5"
 date: 2023-07-03T10:04:10-05:00
-thumbnail: "nagoya-castle.jpg"
+thumbnail: "itsukushima-shrine-torii-gate.jpg"
 draft: true
 categories: ["Music"]
 tags: ["epsilon", "delta", "gamma", "beta", "alpha"]
@@ -13,9 +13,9 @@ autonumbering: true
   width="730"
   height=""
   class="img-fluid"
-  src="/images/nagoya-castle.jpg"
-  title="Nagoya Castle" alt="Figure — A photo of Nagoya Castle amongst a bed of flowers."
-  figCaption="Figure — A photo of Nagoya Castle amongst a bed of flowers."
+  src="itsukushima-shrine-torii-gate-2.jpg"
+  title="Nagoya Castle" alt="Figure — A photo the Itsukushima Shrine Torii Gate, Miyajima, Hiroshima, Japan."
+  figCaption="Figure — A photo the Itsukushima Shrine Torii Gate, Miyajima, Hiroshima, Japan."
 >}}
 
 Welcome Back!

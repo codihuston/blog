@@ -1,24 +1,36 @@
 <p class="text-center">
-  {{ $image := resources.Get (.Scratch.Get "Src") }}
-  {{ $targetWidth := (.Scratch.Get "Width") }}
-  {{ $targetHeight := (.Scratch.Get "Height") }}
-  {{ $dimensions := printf "%sx%s" $targetWidth $targetHeight }}
-  {{ $resize := $image.Resize (printf "%s %s" $dimensions) }}
-  {{ $imageBaseName := strings.TrimSuffix (path.Ext $image.Name) $image.Name }}
-  {{ $imageExt :=  (path.Ext $image.Name) }}
-  {{ $newImageName := (printf "%s-%s%s" $imageBaseName $dimensions $imageExt) }}
-  {{ $newImage := resources.Copy $newImageName $resize }}
-  <figure>
-    <img src="{{ $newImage.RelPermalink }}"
-      width="{{ $newImage.Width }}"
-      height="{{ $newImage.Height }}"
-      title="{{ .Scratch.Get "Title" }}"
-      class="{{ .Scratch.Get "Class" }}"
-      alt="{{ .Scratch.Get "Alt" }}">
-    <figcaption class="text-center text-muted">
-      <em>
-        {{ .Scratch.Get "FigCaption" }}
-      </em>
-    </figcaption>
-  </figure>
+  {{/*  If an absolute path is given, fetch from assets  */}}
+  {{ if hasPrefix (.Scratch.Get "Src") "/" }}
+    {{ $resource :=  (resources.Get (.Scratch.Get "Src")) }}
+    {{ .Scratch.Set "imagePath" $resource }}
+  {{/*  If a relative path is given, fetch relative to page  */}}
+  {{ else }}
+    {{ $imagePath := printf "%s%s" .Page.RelPermalink (.Scratch.Get "Src") }}
+    {{ $resource := .Page.Resources.GetMatch (.Scratch.Get "Src") }}
+    {{ .Scratch.Set "imagePath" $resource }}
+  {{ end }}
+  {{ with .Scratch.Get "imagePath" }}
+    {{ $image := $.Scratch.Get "imagePath" }}
+    {{ $targetWidth := ($.Scratch.Get "Width") }}
+    {{ $targetHeight := ($.Scratch.Get "Height") }}
+    {{ $dimensions := printf "%sx%s" $targetWidth $targetHeight }}
+    {{ $resize := $image.Resize (printf "%s %s" $dimensions) }}
+    {{ $imageBaseName := strings.TrimSuffix (path.Ext $image.Name) $image.Name }}
+    {{ $imageExt :=  (path.Ext $image.Name) }}
+    {{ $newImageName := (printf "%s-%s%s" $imageBaseName $dimensions $imageExt) }}
+    {{ $newImage := resources.Copy $newImageName $resize }}
+    <figure>
+      <img src="{{ $newImage.RelPermalink }}"
+        width="{{ $newImage.Width }}"
+        height="{{ $newImage.Height }}"
+        title="{{ $.Scratch.Get "Title" }}"
+        class="{{ $.Scratch.Get "Class" }}"
+        alt="{{ $.Scratch.Get "Alt" }}">
+      <figcaption class="text-center text-muted">
+        <em>
+          {{ $.Scratch.Get "FigCaption" }}
+        </em>
+      </figcaption>
+    </figure>
+  {{ end }}
 </p>
