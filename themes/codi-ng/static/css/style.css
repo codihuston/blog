@@ -60,6 +60,8 @@ article {
   color: #222;
 }
 
+/* Table of Contents */
+/* 
 nav > ul * { list-style: none;}
 
 nav > ul > li * { 
@@ -71,7 +73,7 @@ nav > ul > li > a:hover,
 nav > ul > li * a:hover {
   color: blue;
   cursor: pointer;
-}
+} */
 
 .dot:after {
   content: "\00B7";

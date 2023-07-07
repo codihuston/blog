@@ -10,7 +10,7 @@ assetDir = "static"
 [markup]
   [markup.tableOfContents]
     endLevel = 5
-    ordered = false
+    ordered = true
     startLevel = 2
   [markup.highlight]
     tabWidth = 2
