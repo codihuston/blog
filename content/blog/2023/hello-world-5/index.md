@@ -3,7 +3,7 @@ title: "Hello World 5"
 date: 2023-07-03T10:04:10-05:00
 thumbnail: "itsukushima-shrine-torii-gate.jpg"
 draft: true
-categories: ["Music"]
+categories: ["Music", "Life"]
 tags: ["epsilon", "delta", "gamma", "beta", "alpha"]
 summary: "This is a summary. Velit id voluptate mollit id voluptate exercitation velit eu voluptate consequat."
 autonumbering: true

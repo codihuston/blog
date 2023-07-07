@@ -11,7 +11,7 @@
           {{ partial "category-aggregates.html" . }}
         </div>
         <p>The following post(s) are related to "{{ .Data.Term }}".</p>
-        {{ range ($.Site.GetPage "taxonomyTerm" (urlize .Data.Term)).Pages }}
+        {{ range ($.Site.GetPage "taxonomyTerm" (urlize .Data.Term)).Pages.ByPublishDate.Reverse }}
         {{ partial "post-list-item.html" . }}
         {{ end }}
       {{ else }}
