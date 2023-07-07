@@ -10,7 +10,8 @@ engineer, which covers a wide range of topics such as: full-stack
 web development, containerization (Docker, Podman),
 Kubernetes, OpenShift, Open Container Initiative (OCI), Cloud Native Computing
 Foundation (CNCF), DevOps, GitOps, Software Design, Software Architecture,
-Networking, Systems Administration, and much, much more!
+Networking, Systems Administration, and much, much more! You can read more
+[about me here]({{< relref "/about" >}})!
 
 I invite you to join me on this exciting journey as we explore the
 intersection of technology, security, and the joys of life beyond

@@ -8,7 +8,7 @@ layout: "about"
 
 {{< about >}}
 
-I embarked on my professional journey in 2015 after graduating with a Bachelor's
+I embarked on my professional journey in 2015 after graduating with a Bachelor
 of Science in Computer Science! For six fulfilling years, I honed my skills as
 a web developer and systems administrator for a public university. This
 experience not only deepened my understanding of technology but also instilled
