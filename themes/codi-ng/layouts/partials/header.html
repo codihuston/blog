@@ -1,5 +1,5 @@
 <div class="fixed-top nav-container end-of-section">
-  {{ partial "socials.html" }}
+  {{ partial "socials.html" . }}
   <nav id="nav" class="nav justify-content-center">
     {{ range .Site.Menus.main }}
     <a class="nav-link no-style" href="{{ .URL }}">
